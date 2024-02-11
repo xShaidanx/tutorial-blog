@@ -1,5 +1,36 @@
 ---
-    const pageTitle = "About me";
+const pageTitle = "About me";
+
+const person = {
+  firstName: "Miguel Angel",
+  country: "España",
+  occupation: "Desarrollador",
+  hobbies: [
+    "fotografia",
+    "videojuegos",
+    "edicion de vídeo",
+    "edición de imagenes",
+    "lectura",
+    "deporte",
+  ],
+};
+
+const skills = [
+  "HTML, Markdown",
+  "CSS, Bootsrap, Flex, Grid, Sass, Less, Tailwind",
+  "JavaScript, Typescript, Python, Java, PHP",
+  "React, Astro, Angular, CakePHP",
+  "SQL, CakePHP ORM, MariaDB, Oracle",
+  "Git, BitBucket",
+  "Photoshop",
+  "SQL, BBDD Relacionales",
+  "Redacción de documentos, Word, Excel",
+  "API's: creacion y trabajo",
+];
+
+const happy = true;
+const finished = false;
+const goal = 3;
 ---
 
 <html lang="en">
@@ -17,14 +48,35 @@
     <a href="/about/">About me</a>
     <h1>{pageTitle}</h1>
     <h2>... ¡y mi nuevo sitio Astro!</h2>
-    <p>
-      Estoy trabajando en el tutorial introductorio de Astro. Esta es la segunda
-      página de mi sitio web, ¡y es la primera que he construido yo mismo!
-    </p>
+    <p>Estoy trabajando en el tutorial introductorio de Astro. Esta es la segunda página de mi sitio web, ¡y es la primera que he construido yo mismo!</p>
 
-    <p>
-      Este sitio se irá actualizando a medida que vaya completando más partes
-      del tutorial, ¡así que no dejes de visitarlo para ver cómo va mi viaje!
-    </p>
+    <p>Este sitio se irá actualizando a medida que vaya completando más partes del tutorial, ¡así que no dejes de visitarlo para ver cómo va mi viaje!</p>
+    <p>He aquí algunos datos sobre mí:</p>
+    <ul>
+      <li>Me llamo {person.firstName}.</li>
+      <li>Vivo en {person.country} y trabajo como {person.occupation}</li>
+      {
+        person.hobbies.length >= 2 && (
+          <li>
+            Dos de mis aficiones son: {person.hobbies[0]} y {person.hobbies[1]}
+          </li>
+        )
+      }
+    </ul>
+    <p>Mis habilidades son:</p>
+    <ul>
+      {skills.map((skill) => <li>{skill}</li>)}
+    </ul>
+    {happy && <p>¡Estoy feliz de aprender Astro!</p>}
+
+    {finished && <p>¡He terminado este tutorial!</p>}
+
+    {
+      goal === 3 ? (
+        <p>Mi objetivo es terminar en 3 días.</p>
+      ) : (
+        <p>Mi objetivo no son 3 días.</p>
+      )
+    }
   </body>
 </html>

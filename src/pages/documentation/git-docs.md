@@ -14,14 +14,14 @@ description: GitHub info, commands and workflow
 ## Crear un repositorio
 <p>Usamos el boton de crear un nuevo repositorio en GitHub, le damos nombre, descripcion, publico normalmente ya que los provados solo podremos hacerlos con una cuenta de pago, podemos crearle directamente un README para informar del uso, proposito o funcionamiento de nuestro repositorio, crearle un archivo gitignore si no lo hemos hecho al crear el proyecto y elegir una licencia para decir que se puede o que no se puede hacer con nuestro codigo. Una vez elegido pulsamos el boton de "Create repository".</p>
 
-<img src="../../assets/images/git-images/create-repository.jpg" alt="create repository">
+![Create repository](../../assets/images/git-images/create-repository.jpg)
 
 <p>Una vez creado el repositorio, podemos dar la orden de añadir el destino remoto de nuestro repositorio a nuestro proyecto local.</p>
 
 ```bash
     git remote add origin https://github.com/nombreusuariogit/nombrerepositoriogit.git
 ```
-<p>Una vez añadida la direccion a a la que apunta el repositorio, vamos a renombrar nuestra rama master, creada por defecto, por un nombre mas adecuado al estandar actual, y la llamaremos rama main.</p>
+<p>Ahora la palabra origin equivale a la url del repositorio remoto. Una vez añadida la direccion a a la que apunta el repositorio, vamos a renombrar nuestra rama master, creada por defecto, por un nombre mas adecuado al estandar actual, y la llamaremos rama main.</p>
 
 ```bash
     git branch -M main
