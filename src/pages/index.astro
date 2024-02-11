@@ -1,5 +1,5 @@
 ---
-
+	const pageTitle = "Home del Blog";
 ---
 
 <html lang="en">
@@ -8,12 +8,13 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Index del Blog</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<a href="/">Home</a>
     <a href="/blog/">Blog</a>
+	<a href="/utility/">Utilities</a>
     <a href="/about/">About me</a>
-		<h1>Index de mi sitio Astro</h1>
+		<h1>{pageTitle}</h1>
 	</body>
 </html>

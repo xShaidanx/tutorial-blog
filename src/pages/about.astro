@@ -1,5 +1,5 @@
 ---
-
+    const pageTitle = "About me";
 ---
 
 <html lang="en">
@@ -8,13 +8,14 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>About del Blog de Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <a href="/">Home</a>
     <a href="/blog/">Blog</a>
+    <a href="/utility/">Utilities</a>
     <a href="/about/">About me</a>
-    <h1>About me</h1>
+    <h1>{pageTitle}</h1>
     <h2>... ¡y mi nuevo sitio Astro!</h2>
     <p>
       Estoy trabajando en el tutorial introductorio de Astro. Esta es la segunda
