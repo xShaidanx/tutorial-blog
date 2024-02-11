@@ -198,3 +198,21 @@ description: Documentation, tools, pages and docs
         console.log(repo)
     })
 ```
+
+## Operadores ternarios
+<p>En funcion de una condicion inicial realizaran oparaciones dependiendo de si se cumple o no. Puede hacerse tanto para el caso de que se cumpla hacer algo, como para el caso de que no se cumpla hacer otra cosa, pero no hace falta que lleve todas las opciones. Ejemplos:</p>
+<p>Ejemplo 1: construccion basica del operador</p>
+
+```typescript
+    condición ? expr1 : expr2
+```
+<p>Ejemplo 2: operador binario</p>
+
+```typescript
+    variable ? revision="se cumple"
+```
+<p>Ejemplo 3: operador ternario</p>
+
+```typescript    
+    variable ? revision="se cumple" : revision="no se cumple"
+```
